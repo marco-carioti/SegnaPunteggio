@@ -13,7 +13,7 @@
         android:layout_marginTop="168dp"
         android:text="Segna il punteggio!!!"
         android:textSize="24dp"
-        android:textStyle="bold"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

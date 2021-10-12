@@ -9,5 +9,14 @@
         android:id="@+id/homeFragment"
         android:name="com.example.segnapunteggio.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.segnapunteggio.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" />
 </navigation>

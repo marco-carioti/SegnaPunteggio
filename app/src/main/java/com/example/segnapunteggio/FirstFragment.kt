@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.segnapunteggio.databinding.FragmentFirstBinding
 import com.example.segnapunteggio.databinding.FragmentHomeBinding
 
@@ -31,13 +32,17 @@ class FirstFragment : Fragment() {
             binding.punteggiocasa.text = viewModel.add_score().toString()
         }
         binding.diminuisciCasa.setOnClickListener {
-            viewModel.remove_score()
+            binding.punteggiocasa.text = viewModel.remove_score().toString()
         }
         binding.aumentaTrasferta.setOnClickListener {
-            viewModel.add_score()
+            binding.punteggiotrasferta.text = viewModel.add_score().toString()
         }
         binding.diminuisciTrasferta.setOnClickListener {
-            viewModel.remove_score()
+            binding.punteggiotrasferta.text = viewModel.remove_score().toString()
+        }
+        binding.finish.setOnClickListener {
+            val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment2( binding.punteggiocasa.text.toString(),binding.punteggiotrasferta.text.toString())
+            findNavController().navigate(action)
         }
     }
     }

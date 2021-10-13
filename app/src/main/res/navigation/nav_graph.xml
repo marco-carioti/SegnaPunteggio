@@ -27,5 +27,12 @@
         android:id="@+id/secondFragment"
         android:name="com.example.segnapunteggio.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second" >
+        <argument
+            android:name="punteggio_casa"
+            app:argType="string" />
+        <argument
+            android:name="punteggio_trasferta"
+            app:argType="string" />
+    </fragment>
 </navigation>

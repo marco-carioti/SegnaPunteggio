@@ -9,14 +9,29 @@
         android:id="@+id/risultato_finale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Il risultato finale è "
+        android:text="Risultato"
         android:textSize="24dp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.147"></TextView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/risultato_finale2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Risultato"
+        android:textSize="24dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toEndOf="@+id/risultato_finale"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 

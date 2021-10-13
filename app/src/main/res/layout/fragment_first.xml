@@ -10,32 +10,33 @@
         android:id="@+id/casa_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
         android:background="#20000000"
         android:text="        CASA        "
         android:textColor="@color/black"
         android:textSize="17dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259"></TextView>
+        app:layout_constraintVertical_bias="0.258"></TextView>
 
     <TextView
         android:id="@+id/trasferta_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="184dp"
         android:background="#20000000"
         android:text=" TRASFERTA "
         android:textColor="@color/black"
         android:textSize="17dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toEndOf="@+id/casa_textView"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258"></TextView>
 
     <TextView
         android:id="@+id/punteggiocasa"
@@ -66,49 +67,86 @@
 
     </TextView>
 
+
     <Button
-        android:id="@+id/button_aumenta"
+        android:id="@+id/aumenta_casa"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="404dp"
         android:backgroundTint="#20000000"
         android:text="+"
         android:textColor="@color/black"
-        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/aumenta_trasferta"
+        app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/punteggiocasa"></Button>
+        app:layout_constraintTop_toBottomOf="@+id/punteggiocasa"
+        app:layout_constraintVertical_bias="0.65" />
 
     <Button
-        android:id="@+id/button_meno"
+        android:id="@+id/diminuisci_casa"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="14dp"
         android:backgroundTint="#20000000"
         android:text="-"
         android:textColor="@color/black"
-        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/finish"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
-        app:layout_constraintStart_toEndOf="@+id/button_aumenta"
-        app:layout_constraintTop_toBottomOf="@+id/punteggiotrasferta" />
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aumenta_casa"
+        app:layout_constraintVertical_bias="0.0"></Button>
+
+    <Button
+        android:id="@+id/aumenta_trasferta"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#20000000"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/punteggiotrasferta"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <Button
+        android:id="@+id/diminuisci_trasferta"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#20000000"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.599"
+        app:layout_constraintStart_toEndOf="@+id/diminuisci_casa"
+        app:layout_constraintTop_toBottomOf="@+id/aumenta_trasferta"
+        app:layout_constraintVertical_bias="0.108"></Button>
 
     <Button
         android:id="@+id/finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606"
+        android:backgroundTint="#20000000"
         android:text="FINISH"
         android:textColor="@color/black"
         android:textSize="17dp"
         android:textStyle="bold"
-        android:backgroundTint="#20000000"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.715" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
